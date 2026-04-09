@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Personal Website</title>
+
+  
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Shawn Xavier Miguel Tabirara</h1>
+    <p>"Wake up to reality. Nothing ever goes as planned in this accursed world. The longer you live, the more you realize that the only things that truly exist in this reality are merely pain, suffering and futility"</p>
+</header>
+
+<nav>
+    <a href="#about">About Me</a>
+    <a href="#skills">Hobbies</a>
+    <a href="#projects">Images of my hobbies</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="container" id="about">
+    <img src="sean.jpg" class="profile-img">
+    <h2>About Me</h2>
+    <p>
+        My name is <strong>Shawn Xavier Miguel Tabirara</strong>, born on December 6, 2008. I live with my mom, sister and my dog. I am a senior high school student here in Imus, Cavite and currently am looking for a part time job so I can repair my laptop as it is broken. I study in Unida Christian Colleges specializing in IT.<br><br>
+
+One of my hobbies is playing guitar. It is an off and on relationship because I tend to play guitar for a while then just lay it off for a long while then pick it up again. I started playing my acoustic guitar when I wanted to sing a song to crush one day but ultimately wasn't able to, still I continue to play the guitar as a hobby of mine.<br><br>
+
+One of my other hobbies is watching anime and playing online games. This was a daily routine for me everyday during the pandemic and it was very enjoyable too for me because I was able to make friends online and had so much entertainment at home while it was lockdown.<br><br>
+
+I, Shawn Xavier Miguel Tabirara, have a dream of having a wealthy life. I do not wish to have a very dramatic luxurious life, but I want to live a peaceful life, preferably in Japan and be able to have my mom enjoy her life with her sisters with the work I'll one day find.<br><br>
+
+I am experiencing a somewhat hard thing I have in my life as of now, and I regret not doing the things I was supposed to do before it was too late. I know to myself that I have potential and I am not trying, so mentally I'm trying to help myself get up and keep going to work for the dream I chase, the ideal I want to achieve, so I don't have any regrets with the life given to me.
+    </p>
+</section>
+
+<section class="container" id="skills">
+    <h2>Hobbies</h2>
+    <ul>
+        <li>Guitaring -I like playing guitar because just like listening to music, I helps me relax, focus, and eases my mind when i do anything random.
+
+
+</li>
+        <li>Anime -I like watching TV Shows or movies, like anime, because ever since pandemic, I started watching them just to kill time while i had online class.</li>
+        <li>Playing online games 3 -I like playing online games too because its also my enjoyment when I had online class too, a thing to kill time, and then I enjoyed it so much that I play a lot of games now.</li>
+        <li>Hanging out with friends -information</li>
+     
+    </ul>
+</section>
+
+<section class="container" id="projects">
+    <h2>Pictures</h2>
+    <img style="position: relative; left:10px; top:px;"src="imabarbiegirl.jpg" width="150px" height="150px">
+    <img style="position: relative; left:60px; top:px;"src="hangingoutiwthfriends.jpg" width="150px" height="150px">
+    <img style="position: relative; left:100px; top:px;"src="uwu.jpg" width="150px" height="150px">
+    <img style="position: relative; left:150px; top:px;"src="balorant.jpg" width="150px" height="150px">
+    
+    
+</section>
+
+<section class="container" id="generator">
+    <h2>Number Generator</h2>
+    <p>Click the button to generate a random number.</p>
+    
+    <button onclick="generateNumber()" style="padding:10px 20px; font-size:16px; background-color:#8B0000; color:white; border:none; border-radius:8px; cursor:pointer;">
+        Generate Number
+    </button>
+
+    <h3 id="result" style="margin-top:15px; color:#ff4d4d;">Your number will appear here</h3>
+</section>
+
+
+<script>
+    function generateNumber() {
+        
+        var randomNumber = Math.floor(Math.random() * 100) + 1;
+
+       
+        document.getElementById("result").innerText = "Generated Number: " + randomNumber;
+    }
+</script>
+
+</body>
+</html>
